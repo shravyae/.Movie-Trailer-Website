@@ -11,12 +11,9 @@ class Movie():
                 self.duration = duration_time
                 self.ratings = VALID_RATINGS
         
-
         def show_trailer(self):
                 webbrowser.open(self.trailer_youtube_url)
 
         def show_image(self):
                 webbrowser.open(self.poster_image_url)
-
-
-#print(Movie.VALID_RATINGS)      
+                
