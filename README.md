@@ -14,6 +14,14 @@ To run the project (generate static `HTML` web page), we will need to follow the
 * Open the command prompt / terminal, and make sure command prompt / terminal path is the project location
 * To generate the static HTML file with the favorite movies listed, enter `python entertainment_center.py` in your command prompt / terminal.
 
+## Add new movies
+
+You can fork this repo and add your favorite movies!
+
+* Open entertainment_center.py in your Code Editor.
+* All the movies are saved under `movies = [media.Movie()]`
+* You can add/remove movies of your choices as per the existing format.
+
 
 ## MIT License
 
