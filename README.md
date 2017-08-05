@@ -1,11 +1,23 @@
 
 # Movie Trailer Website
-###### Udacity Full Stack Web Development Project 1
+ ### Udacity Full Stack Web Development Project 1
+ > This is a collection of interesting movie list and their trailers presented through a `python` generated web page.The movies are stored as Python dictionary inside `entertainment_center.py` file.
+
+
+ 
+## Run
+
+To run the project (generate static `HTML` web page), we will need to follow the below steps -
+
+* Clone the project to your local directory
+* `git checkout master` on your command prompt / terminal if not on master branch.
+* Open the command prompt / terminal, and make sure command prompt / terminal path is the project location
+* To generate the static HTML file with the favorite movies listed, enter `python entertainment_center.py` in your command prompt / terminal.
 
 
 ## MIT License
 
-##### Copyright (c) 2017 Shravya Enugala
+###### Copyright (c) 2017 Shravya Enugala
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
