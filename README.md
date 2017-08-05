@@ -9,6 +9,7 @@
 
 To run the project (generate static `HTML` web page), we will need to follow the below steps -
 
+* Make sure you have `PYTHON`, this is built using `PYTHON 2.7.13` version.
 * Clone the project to your local directory
 * `git checkout master` on your command prompt / terminal if not on master branch.
 * Open the command prompt / terminal, and make sure command prompt / terminal path is the project location
