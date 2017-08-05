@@ -1,6 +1,11 @@
 
 import fresh_tomatoes
-import media
+import media   
+''' This is entertainment_center.py file that we run and execute. we have 
+imported the fresh_tomatoes.py that generates the required html file for this 
+project which is given by the Udacity team and also imported media.py that 
+has the data structure we need to build the dictionary of movies we want 
+to display with its trailer. '''
 
 a =  media.Movie("Spider-Man: Homecoming",
                         "2017",
@@ -105,6 +110,8 @@ o =  media.Movie("Deadpool",
                         "1h 48min",
                         media.Movie.VALID_RATINGS[3])
 
+''' Here we are going to put the above data into an array and trying to open it
+ with the help of fresh_tomatoes.py file provided '''
 movies = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o]
 fresh_tomatoes.open_movies_page(movies)
 

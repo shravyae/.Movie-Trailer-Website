@@ -8,8 +8,12 @@ main_page_head = '''
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    
+    <!-- We are usine Google API to parse some fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:300i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=BenchNine|Sedgwick+Ave" rel="stylesheet">
+   
+   <!-- Title tag -->
     <title>Project: Movie Trailer Website</title>
 
     <!-- Bootstrap 3 -->
@@ -17,6 +21,8 @@ main_page_head = '''
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    
+    <!--CSS stylesheet -->
     <style type="text/css" media="screen">
 
         body {
@@ -29,6 +35,7 @@ main_page_head = '''
             font-family: 'Nunito', sans-serif;
             font-size: 18px;
         }
+
         p{
             font-family: 'Nunito', sans-serif;
             font-size: 12px;
@@ -39,6 +46,7 @@ main_page_head = '''
             width: 640px;
             height: 480px;
         }
+
         .hanging-close {
             position: absolute;
             top: -12px;
@@ -49,19 +57,23 @@ main_page_head = '''
             width: 100%;
             height: 100%;
         }
+
         .movie-tile {
             margin-bottom: 20px;
             padding-top: 20px;
         }
+
         .movie-tile:hover {
             background-color: #B9B9BA;
             cursor: pointer;
         }
+
         .scale-media {
             padding-bottom: 56.25%;
             position: relative;
 
         }
+
         .scale-media iframe {
             border: none;
             height: 100%;
@@ -79,7 +91,6 @@ main_page_head = '''
         .navbar-brand {
             font-family: 'Nunito', sans-serif;
             font-size: 22px;
-
         }
 
         footer {
@@ -93,6 +104,7 @@ main_page_head = '''
             font-family: 'BenchNine', sans-serif;
             font-size:18px;
         }
+
     </style>
 
     <script type="text/javascript" charset="utf-8">
@@ -144,6 +156,7 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
+            <!-- I've added the custom heading with a link to the projet's github location -->
             <a class="navbar-brand" href="https://github.com/shravyae/.Movie-Trailer-Website">
                 Shravya Enugala : Udacity Project 1: Movie Trailer Website
             </a>
@@ -158,7 +171,7 @@ main_page_content = '''
 </html>
 '''
 
-# Footer 
+# created a footer coloumn and linked it to my LinkedIn profile, feel free to add me. 
 main_page_footer = '''
 <footer style="position:fixed">
     <div> 
@@ -167,12 +180,13 @@ main_page_footer = '''
 </footer>
 '''
 
-# A single movie entry html template
+# A single movie entry html template 
 movie_tile_content = '''
+
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
     <h4>{movie_title}</h4>
-     <p>{duration_time} || {release_date} || {ratings}</p>
+    <p>{duration_time} || {release_date} || {ratings}</p>
 </div>
 '''
 
