@@ -3,7 +3,8 @@ import webbrowser
 class Movie():
         VALID_RATINGS = ["G","PG","PG-13","R","NC-17","Unrated"]
 
-        def __init__(self, movie_title, release_date, poster_image, trailer_youtube, duration_time,VALID_RATINGS):
+        def __init__(self, movie_title, release_date, poster_image, 
+                trailer_youtube, duration_time,VALID_RATINGS):
                 self.title = movie_title
                 self.release = release_date
                 self.poster_image_url = poster_image
@@ -16,4 +17,3 @@ class Movie():
 
         def show_image(self):
                 webbrowser.open(self.poster_image_url)
-                

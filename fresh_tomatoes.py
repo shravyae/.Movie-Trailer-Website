@@ -8,6 +8,8 @@ main_page_head = '''
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=BenchNine|Sedgwick+Ave" rel="stylesheet">
     <title>Project: Movie Trailer Website</title>
 
     <!-- Bootstrap 3 -->
@@ -16,8 +18,20 @@ main_page_head = '''
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <style type="text/css" media="screen">
+
         body {
-            padding-top: 80px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background: #DADADB;;
+        }
+
+        h4 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 18px;
+        }
+        p{
+            font-family: 'Nunito', sans-serif;
+            font-size: 12px;
         }
 
         #trailer .modal-dialog {
@@ -40,12 +54,13 @@ main_page_head = '''
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color: #B9B9BA;
             cursor: pointer;
         }
         .scale-media {
             padding-bottom: 56.25%;
             position: relative;
+
         }
         .scale-media iframe {
             border: none;
@@ -54,9 +69,32 @@ main_page_head = '''
             width: 100%;
             left: 0;
             top: 0;
-            background-color: white;
+            background-color: #27ae60;
+        }
+        
+        .navbar {
+            background: #3B5998;
+        }
+
+        .navbar-brand {
+            font-family: 'Nunito', sans-serif;
+            font-size: 22px;
+
+        }
+
+        footer {
+            background: #34495e;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 50px;  
+            padding: 10px 100px 10px 100px;
+            text-align: center;
+            font-family: 'BenchNine', sans-serif;
+            font-size:18px;
         }
     </style>
+
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
         $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
@@ -106,7 +144,9 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="https://www.linkedin.com/in/shravyaenugala/">Shravya Enugala : Udacity Project 1: Movie Trailer Website</a>
+            <a class="navbar-brand" href="https://github.com/shravyae/.Movie-Trailer-Website">
+                Shravya Enugala : Udacity Project 1: Movie Trailer Website
+            </a>
           </div>
         </div>
       </div>
@@ -118,12 +158,21 @@ main_page_content = '''
 </html>
 '''
 
+# Footer 
+main_page_footer = '''
+<footer style="position:fixed">
+    <div> 
+         <a href= "https://www.linkedin.com/in/shravyaenugala/"> Connect on LinkedIn </a>
+    </div>
+</footer>
+'''
+
 # A single movie entry html template
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
     <h4>{movie_title}</h4>
-     {duration_time} || {release_date} || {ratings}
+     <p>{duration_time} || {release_date} || {ratings}</p>
 </div>
 '''
 
@@ -159,7 +208,7 @@ def open_movies_page(movies):
         movie_tiles=create_movie_tiles_content(movies))
 
     # Output the file
-    output_file.write(main_page_head + rendered_content)
+    output_file.write(main_page_head + rendered_content + main_page_footer)
     output_file.close()
 
     # open the output file in the browser (in a new tab, if possible)

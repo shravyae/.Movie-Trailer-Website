@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=BenchNine|Sedgwick+Ave" rel="stylesheet">
     <title>Project: Movie Trailer Website</title>
 
     <!-- Bootstrap 3 -->
@@ -11,8 +13,20 @@
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <style type="text/css" media="screen">
+
         body {
-            padding-top: 80px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background: #DADADB;;
+        }
+
+        h4 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 18px;
+        }
+        p{
+            font-family: 'Nunito', sans-serif;
+            font-size: 12px;
         }
 
         #trailer .modal-dialog {
@@ -35,12 +49,13 @@
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color: #B9B9BA;
             cursor: pointer;
         }
         .scale-media {
             padding-bottom: 56.25%;
             position: relative;
+
         }
         .scale-media iframe {
             border: none;
@@ -49,9 +64,32 @@
             width: 100%;
             left: 0;
             top: 0;
-            background-color: white;
+            background-color: #27ae60;
+        }
+        
+        .navbar {
+            background: #3B5998;
+        }
+
+        .navbar-brand {
+            font-family: 'Nunito', sans-serif;
+            font-size: 22px;
+
+        }
+
+        footer {
+            background: #34495e;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 50px;  
+            padding: 10px 100px 10px 100px;
+            text-align: center;
+            font-family: 'BenchNine', sans-serif;
+            font-size:18px;
         }
     </style>
+
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
         $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
@@ -98,7 +136,9 @@
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="https://www.linkedin.com/in/shravyaenugala/">Shravya Enugala : Udacity Project 1: Movie Trailer Website</a>
+            <a class="navbar-brand" href="https://github.com/shravyae/.Movie-Trailer-Website">
+                Shravya Enugala : Udacity Project 1: Movie Trailer Website
+            </a>
           </div>
         </div>
       </div>
@@ -108,93 +148,99 @@
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="xrzXIaTt99U" data-toggle="modal" data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk4ODQ1MzgzNl5BMl5BanBnXkFtZTgwMTMyMzM4MTI@._V1_SY1000_CR0,0,658,1000_AL_.jpg" width="220" height="342">
     <h4>Spider-Man: Homecoming</h4>
-     2h 13min || 2017 || PG-13
+     <p>2h 13min || 2017 || PG-13</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="ny3hScFgCIQ" data-toggle="modal" data-target="#trailer">
     <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcRPoMqL1vglrh7OF_69pT8gYMYnYaq1r7WfPMcD587V9uOR_hW2" width="220" height="342">
     <h4>Logan</h4>
-     2h 17min || 2017 || R
+     <p>2h 17min || 2017 || R</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="NNrK7xVG3PM" data-toggle="modal" data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxMDAxNDUyNV5BMl5BanBnXkFtZTgwOTc3MzcxMjI@._V1_SY1000_CR0,0,674,1000_AL_.jpg" width="220" height="342">
     <h4>Valerian</h4>
-     2h 17min || 2017 || PG-13
+     <p>2h 17min || 2017 || PG-13</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="R-Ht8VRPRvU" data-toggle="modal" data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNDgyODEzOV5BMl5BanBnXkFtZTgwMTI4MTA2MjI@._V1_SY1000_CR0,0,674,1000_AL_.jpg" width="220" height="342">
     <h4>Kidnap</h4>
-     1h 34min  || 2017 || Unrated
+     <p>1h 34min  || 2017 || Unrated</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="F-eMt3SrfFU" data-toggle="modal" data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BN2YyZjQ0NTEtNzU5MS00NGZkLTg0MTEtYzJmMWY3MWRhZjM2XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_SY1000_CR0,0,674,1000_AL_.jpg" width="220" height="342">
     <h4>Dunkirk</h4>
-     1h 46min || 2017 || PG-13
+     <p>1h 46min || 2017 || PG-13</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="6hB3S9bIaco" data-toggle="modal" data-target="#trailer">
     <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcSkmMH-bEDUS2TmK8amBqgIMgrfzN1_mImChPuMrunA1XjNTSKm" width="220" height="342">
     <h4>The Shawshank Redemption</h4>
-     2h 22min || 1994 || R
+     <p>2h 22min || 1994 || R</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="lwNLxAKS-Dw" data-toggle="modal" data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNmEyODc1M2YtZDFiNS00YmQxLWEwY2YtMTQwNTk1NzUyYTBlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" width="220" height="342">
     <h4>A Serbian Film</h4>
-     1h 44min  || 2010 || NC-17
+     <p>1h 44min  || 2010 || NC-17</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="sY1S34973zA" data-toggle="modal" data-target="#trailer">
     <img src="http://bit.ly/2tYBove" width="220" height="342">
     <h4>The Godfather</h4>
-     2h 55min || 1972 || R
+     <p>2h 55min || 1972 || R</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="euz-KBBfAAo" data-toggle="modal" data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjUyNzQ2MTg3Ml5BMl5BanBnXkFtZTgwNzE4NDM3MTI@._V1_SY1000_CR0,0,631,1000_AL_.jpg" width="220" height="342">
     <h4>Despicable Me 3</h4>
-     1h 30min || 2017 || PG
+     <p>1h 30min || 2017 || PG</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="s2-1hz1juBI" data-toggle="modal" data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjQ1NjM3MTUxNV5BMl5BanBnXkFtZTgwMDc5MTY5OTE@._V1_SY1000_CR0,0,647,1000_AL_.jpg" width="220" height="342">
     <h4>Hacksaw Ridge</h4>
-      2h 19min || 2016 || R
+     <p> 2h 19min || 2016 || R</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="4fE_yHEerok" data-toggle="modal" data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SY1000_SX675_AL_.jpg" width="220" height="342">
     <h4>Rogue One</h4>
-     2h 13min || 2016 || PG-13
+     <p>2h 13min || 2016 || PG-13</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="ROVc_47FUD8" data-toggle="modal" data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BZTJiNGM2NjItNDRiYy00ZjY0LTgwNTItZDBmZGRlODQ4YThkL2ltYWdlXkEyXkFqcGdeQXVyMjY5ODI4NDk@._V1_SY1000_CR0,0,675,1000_AL_.jpg" width="220" height="342">
     <h4>Split</h4>
-     1h 57min || 2016 || PG-13
+     <p>1h 57min || 2016 || PG-13</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="kNdM7b1Lm04" data-toggle="modal" data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SY1000_CR0,0,674,1000_AL_.jpg" width="220" height="342">
     <h4>Doctor Strange</h4>
-     1h 55min || 2016 || PG-13
+     <p>1h 55min || 2016 || PG-13</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="7BWWWQzTpNU" data-toggle="modal" data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTk4MjU3MDIzOF5BMl5BanBnXkFtZTgwMjM2MzY2MDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" width="220" height="342">
     <h4>Passengers</h4>
-     1h 56min || 2016 || PG-13
+     <p>1h 56min || 2016 || PG-13</p>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="ONHBaC-pfsk" data-toggle="modal" data-target="#trailer">
     <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzMjQ5Mzc3M15BMl5BanBnXkFtZTgwNDExMjE3NzE@._V1_SY1000_SX686_AL_.jpg" width="220" height="342">
     <h4>Deadpool</h4>
-     1h 48min || 2016 || R
+     <p>1h 48min || 2016 || R</p>
 </div>
 
     </div>
   </body>
 </html>
+
+<footer style="position:fixed">
+    <div> 
+         <a href= "https://www.linkedin.com/in/shravyaenugala/"> Connect on LinkedIn </a>
+    </div>
+</footer>
